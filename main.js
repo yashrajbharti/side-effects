@@ -1,0 +1,14 @@
+$('.playSE').click(function(){
+    $('.playSE').css("opacity","0");
+    $('.playSE').css("z-index","1");
+    $('.pauseSE').css("opacity","1");
+    $('.pauseSE').css("z-index","2");
+    $('.play').click();
+});
+$('.pauseSE').click(function(){
+    $('.pauseSE').css("opacity","0");
+    $('.pauseSE').css("z-index","1");
+    $('.playSE').css("opacity","1");
+    $('.playSE').css("z-index","2");
+    $('.pause').click();
+});
